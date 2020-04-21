@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.SubmitButton {
+  margin-top: 10px;
+
+  button {
+    width: 200px;
+    height: 40px;
+    font-size: $textRegular;
+    background-color: lightgreen;
+  }
+}

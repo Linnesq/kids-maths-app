@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+.InputBox {
+  width: 20%;
+  border: 3px black solid;
+  text-align: center;
+  font-size: $textRegular;
+  background-color: lightgreen;
+}
