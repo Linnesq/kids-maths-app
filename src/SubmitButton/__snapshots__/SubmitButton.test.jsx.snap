@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicking on submit button should trigger handler function 1`] = `
+<div>
+  <div
+    class="SubmitButton"
+  >
+    <button
+      data-testid="submitButton"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
