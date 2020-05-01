@@ -1,3 +1,8 @@
 {
-    "npm test --": "node_modules/.bin/jest"
+    "npm test --": "./node_modules/.bin/jest",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.codeActionsOnSave.mode": "problems",
 }

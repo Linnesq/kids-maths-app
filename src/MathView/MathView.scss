@@ -1,12 +1,12 @@
 @import "../variables.scss";
 
-.SumView {
+.MathView {
   display: inline-flex;
   width: 80%;
   margin-top: 2rem;
 }
 
-.SumView-sign {
+.MathView-sign {
   width: 20%;
   font-size: $textRegular;
 }

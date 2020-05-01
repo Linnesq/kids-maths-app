@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MathTasks module getSimpleAddition should return an expected object 1`] = `
+Object {
+  "answer": 6,
+  "left": 3,
+  "operator": "+",
+  "right": 3,
+  "userFills": "right",
+}
+`;
+
+exports[`MathTasks module getSimpleDivision should return an expected object 1`] = `
+Object {
+  "answer": 3,
+  "left": 9,
+  "operator": "÷",
+  "right": 3,
+  "userFills": "right",
+}
+`;
+
+exports[`MathTasks module getSimpleMultiplication should return an expected object 1`] = `
+Object {
+  "answer": 9,
+  "left": 3,
+  "operator": "×",
+  "right": 3,
+  "userFills": "right",
+}
+`;
+
+exports[`MathTasks module getSimpleSubtraction should return an expected object 1`] = `
+Object {
+  "answer": 5,
+  "left": 5,
+  "operator": "−",
+  "right": 0,
+  "userFills": "right",
+}
+`;
+
+exports[`MathTasks module userFills random, getSimpleAddition should return an expected object 1`] = `
+Object {
+  "answer": 6,
+  "left": 3,
+  "operator": "+",
+  "right": 3,
+  "userFills": "left",
+}
+`;

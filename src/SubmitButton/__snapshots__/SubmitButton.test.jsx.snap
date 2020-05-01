@@ -8,9 +8,7 @@ exports[`clicking on submit button should trigger handler function 1`] = `
     <button
       data-testid="submitButton"
       type="submit"
-    >
-      Submit
-    </button>
+    />
   </div>
 </div>
 `;

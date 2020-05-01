@@ -9,6 +9,7 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -20,6 +21,10 @@
         "react"
     ],
     "rules": {
+        "no-multiple-empty-lines":"warn",
+        "no-multi-spaces":"warn",
+        "object-curly-spacing": ["warn", "always"],
+        "no-console":"warn"
     },
     "settings": {
         "react": {

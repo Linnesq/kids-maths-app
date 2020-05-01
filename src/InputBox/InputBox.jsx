@@ -20,6 +20,7 @@ const InputBox = (props) => {
             onChange={onChangeHandler}
             className="InputBox"
             onKeyUp={onKey}
+            autoFocus
         />
     )
 };

@@ -1,11 +1,11 @@
 @import "../variables.scss";
 
-.SumOptionsPanel {
+.TaskOptionsPanel {
   width: 100px;
   height: 40px;
   font-size: $textRegular;
 }
 
-.SumOptionsPanel-selected {
+.TaskOptionsPanel-selected {
   border: 2px solid black;
 }

@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.scss';
 
-import SumView from './SumView'
+import MathView from './MathView';
+// eslint-disable-next-line
+import { getSimpleTasks, getTimesTablesTask } from './tasks/simple.js'
 
-function App() {
+const App = () => {
+  // const data = getSimpleTasks();
+  const data = getTimesTablesTask();
   return (
     <div className="App">
-      <SumView/>
+      <MathView taskData={data}/>
     </div>
   );
-}
-
+};
 export default App;
