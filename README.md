@@ -6,7 +6,7 @@ This is a demo project - a single page react app which spits out some Key Stage 
 
 # How do I run this?
 
-- install node v12 (see [version](./nvmrc)). I use [nvm](https://github.com/nvm-sh/nvm) to manage node.
+- install node v12 (see [version](./.nvmrc)). I use [nvm](https://github.com/nvm-sh/nvm) to manage node.
 - (if you're using nvm too) `nvm use` in your shell.
 - install dependencies `npm i`.
 - run the app in dev mode with `npm start`.
