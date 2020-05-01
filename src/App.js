@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 
 import MathView from './MathView';
-// eslint-disable-next-line
 import { getSimpleTasks, getTimesTablesTask } from './tasks/simple.js'
 
 const App = () => {
-  // const data = getSimpleTasks();
-  const data = getTimesTablesTask();
+  const [showTimesTables, setShowTimesTables] = useState(false);
+  const data = showTimesTables ? getTimesTablesTask() : getSimpleTasks()
   return (
+    <>
     <div className="App">
-      <MathView taskData={data}/>
+      <MathView key={data.description} taskData={data}/>
     </div>
+    <div className="App App-switcher">
+      <button onClick={() => setShowTimesTables(!showTimesTables)}>
+        Switch Task
+      </button>
+    </div>
+    </>
   );
 };
 export default App;
