@@ -36,6 +36,19 @@ const getSimpleDivision = (userFills='right') => {
     return { left, right, answer, operator, userFills };
 };
 
+const getDivision = (userFills = 'answer', range = 10, factor = 2) => {
+    const answer = getRandomInt(1, range);
+    const randomUserFills = ['left', 'answer'][getRandomInt(0, 2)];
+
+    return {
+        left: factor * answer,
+        right: factor,
+        answer,
+        operator: '÷',
+        userFills: userFills === 'random' ? randomUserFills : userFills,
+    };
+};
+
 const getSimpleSubtraction = (userFills='right') => {
     const values = [getRandomInt(1, 20), getRandomInt(1, 20)];
     const left = Math.max(...values);
@@ -65,5 +78,11 @@ const getUserFills = () => {
     return ['left', 'right', 'answer'][getRandomInt(1, 3) - 1];
 }
 
-
-export { getSimpleAddition, getSimpleMultiplication, getSimpleDivision, getSimpleSubtraction, getTimesTable };
+export { 
+    getSimpleAddition, 
+    getSimpleMultiplication, 
+    getSimpleDivision, 
+    getSimpleSubtraction, 
+    getTimesTable,
+    getDivision,
+ };

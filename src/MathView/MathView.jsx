@@ -115,7 +115,6 @@ class MathView extends React.Component {
                     <SubmitButton onClickHandler={this.onSubmitHandler} buttonText={submitButtonText} />
                 <div>
                     <h3>{resultsText}</h3>
-                    <button onClick={this.onNewTask}>New Math Question</button>
                 </div>
                 <TaskOptionsPanel
                     onClickHandler={this.onTaskTypeChange}
