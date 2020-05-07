@@ -11,23 +11,23 @@ const InputBox = (props) => {
         if (event.keyCode === 13) {
             onSubmit();
         }
-    }
+    };
 
     return (
         <input
+            autoFocus
+            className="InputBox"
             type="number"
             value={isNaN(intValue) ? "" : intValue}
             onChange={onChangeHandler}
-            className="InputBox"
             onKeyUp={onKey}
-            autoFocus
         />
-    )
+    );
 };
 
 InputBox.propTypes = {
     intValue: PropTypes.oneOfType([
-        PropTypes.number, PropTypes.string
+        PropTypes.number, PropTypes.string,
     ]),
     onValueChangeHandler: PropTypes.func,
     onSubmit: PropTypes.func,

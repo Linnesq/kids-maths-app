@@ -2,7 +2,8 @@ const {
     getSimpleAddition,
     getSimpleMultiplication,
     getSimpleDivision,
-    getSimpleSubtraction
+    getSimpleSubtraction,
+    getDivision,
  } = require('./math-tasks.js');
 let mockMath;
 
@@ -32,5 +33,9 @@ describe('MathTasks module', () => {
 
     it('getSimpleSubtraction should return an expected object', () => {
         expect(getSimpleSubtraction()).toMatchSnapshot();
+    });
+
+    it('getDivision should return an expected object', () => {
+        expect(getDivision()).toMatchSnapshot();
     });
 });

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import DisplayBox from '../DisplayBox';
 import InputBox from '../InputBox';
-import SubmitButton from '../SubmitButton'
+import SubmitButton from '../SubmitButton';
 import TaskOptionsPanel from '../TaskOptionsPanel';
 
 import './MathView.scss';
@@ -17,7 +17,7 @@ const results = {
 class MathView extends React.Component {
     constructor(props) {
         super(props);
-        const { controls, taskFunctions } = props.taskData
+        const { controls, taskFunctions } = props.taskData;
         const { userFills } = props.taskData.display;
         const { range, factor } = controls[0];
 
@@ -47,9 +47,10 @@ class MathView extends React.Component {
             this.onNewTask();
         } else {
             const isCorrect = this.state.value === this.state.task[this.state.task.userFills];
-            this.setState({
+            this.setState(prevState => ({
                 result: isCorrect ? results.CORRECT : results.INCORRECT,
-                value: isCorrect ? this.state.value : "" });
+                value: isCorrect ? prevState.value : "",
+            }));
         }
     }
 
@@ -72,7 +73,7 @@ class MathView extends React.Component {
         const newFunction = this.props.taskData.taskFunctions[newTask.taskType];
         const { range, factor } = newTask;
         const args = [this.props.taskData.display.userFills, range, factor];
-        
+
         this.setState({
             taskType: newTask.taskType,
             displayText: newTask.displayText,
@@ -80,7 +81,7 @@ class MathView extends React.Component {
             result: null,
             task: newFunction.apply(this, args),
             range,
-            factor
+            factor,
         });
     }
 
@@ -90,12 +91,14 @@ class MathView extends React.Component {
         });
     }
 
-    render(){
-        const inputBox = <InputBox onValueChangeHandler={this.onInputValueChange} intValue={this.state.value} onSubmit={this.onSubmitHandler} />;
+    render() {
+        const inputBox = (<InputBox intValue={this.state.value}
+                                    onSubmit={this.onSubmitHandler}
+                                    onValueChangeHandler={this.onInputValueChange} />);
         const { controls } = this.props.taskData;
         const { left, right, answer } = this.state.task;
         let resultsText = "Do your best!";
-        if (this.state.result === results.CORRECT){
+        if (this.state.result === results.CORRECT) {
             resultsText = "Correct, well done!";
         } else if (this.state.result === results.INCORRECT) {
             resultsText = "Unlucky, keep trying!";
@@ -107,22 +110,26 @@ class MathView extends React.Component {
             <>
                 <div className="MathView">
                     {this.state.task.userFills === "left" ? inputBox : <DisplayBox value={left} />}
-                    <span className="MathView-sign">{this.state.task.operator}</span>
-                    {this.state.task.userFills === "right" ? inputBox : <DisplayBox value={right}/>}
+                    <span className="MathView-sign">
+                        {this.state.task.operator}
+                    </span>
+                    {this.state.task.userFills === "right" ? inputBox : <DisplayBox value={right} />}
                     <span className="MathView-sign">=</span>
                     {this.state.task.userFills === "answer" ? inputBox : <DisplayBox value={answer} />}
                 </div>
-                    <SubmitButton onClickHandler={this.onSubmitHandler} buttonText={submitButtonText} />
+                <SubmitButton buttonText={submitButtonText}
+                              onClickHandler={this.onSubmitHandler} />
                 <div>
-                    <h3>{resultsText}</h3>
-                    <button onClick={this.onNewTask}>New Math Question</button>
+                    <h3>
+                        {resultsText}
+                    </h3>
                 </div>
                 <TaskOptionsPanel
-                    onClickHandler={this.onTaskTypeChange}
+                    controlInfo={controls}
                     displayText={this.state.displayText}
-                    controlInfo={controls} />
+                    onClickHandler={this.onTaskTypeChange} />
             </>
-        )
+        );
     }
 }
 
@@ -133,10 +140,10 @@ MathView.propTypes = {
             displayText: PropTypes.string.isRequired,
             range: PropTypes.number,
             factor: PropTypes.number,
-    })),
+        })),
         taskFunctions: PropTypes.objectOf(PropTypes.func),
         display: PropTypes.shape({
-            userFills: PropTypes.oneOf(['left', 'right', 'random']).isRequired,
+            userFills: PropTypes.oneOf(['left', 'right', 'answer', 'random']).isRequired,
         }),
     }),
 };

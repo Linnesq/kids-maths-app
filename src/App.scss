@@ -4,14 +4,19 @@
   text-align: center;
 }
 
+.App-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App-switcher {
-  margin-top: 10px;
+  margin-top: 50px;
 
   button {
-    width: 200px;
-    height: 40px;
-    font-size: $textRegular;
-    background-color: lightgrey;
+    font-size: $textSmaller;
+    background-color: lightcyan;
+    margin: 0.25rem;
   }
 }
 

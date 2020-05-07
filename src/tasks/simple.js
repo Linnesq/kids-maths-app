@@ -3,21 +3,22 @@ const {
     getSimpleMultiplication,
     getSimpleDivision,
     getSimpleSubtraction,
-    getTimesTable
+    getTimesTable,
+    getDivision,
 } = require('../utils/math-tasks');
 
 const SYMBOLS = {
     ADD: "+",
     SUB: "−",
     MULT: "×",
-    DIV: "÷"
-}
+    DIV: "÷",
+};
 
 const USERFILLS = {
     LEFT: 'left',
     RIGHT: 'right',
     RANDOM: 'random',
-}
+};
 
 const getSimpleTasks = () => {
     return {
@@ -34,12 +35,11 @@ const getSimpleTasks = () => {
         "division": getSimpleDivision,
         "subtraction" : getSimpleSubtraction,
     },
-    "parameterised": false,
     "display": {
         "userFills": USERFILLS.RANDOM,
     },
 };
-}
+};
 
 const getTimesTablesTask = () => {
     return {
@@ -56,8 +56,29 @@ const getTimesTablesTask = () => {
         },
         "display": {
             "userFills": USERFILLS.RANDOM,
-        }
-    }
+        },
+    };
 };
 
-export { getSimpleTasks, getTimesTablesTask };
+const getDivisionTasks = () => {
+    const division = 'division';
+
+    return {
+        "description": division,
+        controls: [
+            { displayText: "÷2", taskType: division, range: 12, factor: 2 },
+            { displayText: "÷3", taskType: division, range: 12, factor: 3 },
+            { displayText: "÷4", taskType: division, range: 12, factor: 4 },
+            { displayText: "÷5", taskType: division, range: 12, factor: 5 },
+        ],
+        taskFunctions: {
+            [division]: getDivision,
+
+        },
+        display: {
+            userFills: USERFILLS.RANDOM,
+        },
+    };
+};
+
+export { getSimpleTasks, getTimesTablesTask, getDivisionTasks };

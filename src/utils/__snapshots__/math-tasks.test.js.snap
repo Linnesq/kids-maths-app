@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`MathTasks module getDivision should return an expected object 1`] = `
+Object {
+  "answer": 3,
+  "left": 6,
+  "operator": "÷",
+  "right": 2,
+  "userFills": "answer",
+}
+`;
+
 exports[`MathTasks module getSimpleAddition should return an expected object 1`] = `
 Object {
   "answer": 6,

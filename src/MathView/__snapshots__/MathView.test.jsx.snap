@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MathView Component should accept input from keyboard and clicks 1`] = `
+<div>
+  <div
+    class="MathView"
+  >
+    <div
+      class="DisplayBox"
+    >
+      <span>
+        6
+      </span>
+    </div>
+    <span
+      class="MathView-sign"
+    >
+      ÷
+    </span>
+    <div
+      class="DisplayBox"
+    >
+      <span>
+        2
+      </span>
+    </div>
+    <span
+      class="MathView-sign"
+    >
+      =
+    </span>
+    <input
+      class="InputBox"
+      type="number"
+      value=""
+    />
+  </div>
+  <div
+    class="SubmitButton"
+  >
+    <button
+      data-testid="submitButton"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+  <div>
+    <h3>
+      Do your best!
+    </h3>
+  </div>
+  <div>
+    <button
+      class="TaskOptionsPanel TaskOptionsPanel-selected"
+      type="button"
+    >
+      ÷2
+    </button>
+    <button
+      class="TaskOptionsPanel"
+      type="button"
+    >
+      ÷3
+    </button>
+    <button
+      class="TaskOptionsPanel"
+      type="button"
+    >
+      ÷4
+    </button>
+    <button
+      class="TaskOptionsPanel"
+      type="button"
+    >
+      ÷5
+    </button>
+  </div>
+</div>
+`;
