@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, act } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import MathView from './MathView';
 import { getDivisionTasks } from '../tasks/simple';
 
@@ -44,7 +44,7 @@ describe("MathView Component", () => {
 
     test("should not accept incorrect answers", () => {
         const { container, getByText } = render(<MathView taskData={mockProps()} />);
-        
+
         const inputBox = container.querySelector('.InputBox');
         fireEvent.change(inputBox, { target: { value: 10 } }); // input '10'
 
