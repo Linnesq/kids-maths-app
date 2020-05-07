@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kids-maths-app/static/css/main.8e03addc.chunk.css",
-    "main.js": "/kids-maths-app/static/js/main.b4f9ee88.chunk.js",
-    "main.js.map": "/kids-maths-app/static/js/main.b4f9ee88.chunk.js.map",
+    "main.css": "/kids-maths-app/static/css/main.997000b8.chunk.css",
+    "main.js": "/kids-maths-app/static/js/main.ad4ecd1d.chunk.js",
+    "main.js.map": "/kids-maths-app/static/js/main.ad4ecd1d.chunk.js.map",
     "runtime-main.js": "/kids-maths-app/static/js/runtime-main.95b93fe0.js",
     "runtime-main.js.map": "/kids-maths-app/static/js/runtime-main.95b93fe0.js.map",
-    "static/js/2.6637deae.chunk.js": "/kids-maths-app/static/js/2.6637deae.chunk.js",
-    "static/js/2.6637deae.chunk.js.map": "/kids-maths-app/static/js/2.6637deae.chunk.js.map",
+    "static/js/2.578b58f9.chunk.js": "/kids-maths-app/static/js/2.578b58f9.chunk.js",
+    "static/js/2.578b58f9.chunk.js.map": "/kids-maths-app/static/js/2.578b58f9.chunk.js.map",
     "index.html": "/kids-maths-app/index.html",
-    "precache-manifest.bbc269ea63887744ed39e1853d31be76.js": "/kids-maths-app/precache-manifest.bbc269ea63887744ed39e1853d31be76.js",
+    "precache-manifest.984ffb713a9d30a64f4e6eceb0ddc18b.js": "/kids-maths-app/precache-manifest.984ffb713a9d30a64f4e6eceb0ddc18b.js",
     "service-worker.js": "/kids-maths-app/service-worker.js",
-    "static/css/main.8e03addc.chunk.css.map": "/kids-maths-app/static/css/main.8e03addc.chunk.css.map",
-    "static/js/2.6637deae.chunk.js.LICENSE.txt": "/kids-maths-app/static/js/2.6637deae.chunk.js.LICENSE.txt"
+    "static/css/main.997000b8.chunk.css.map": "/kids-maths-app/static/css/main.997000b8.chunk.css.map",
+    "static/js/2.578b58f9.chunk.js.LICENSE.txt": "/kids-maths-app/static/js/2.578b58f9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95b93fe0.js",
-    "static/js/2.6637deae.chunk.js",
-    "static/css/main.8e03addc.chunk.css",
-    "static/js/main.b4f9ee88.chunk.js"
+    "static/js/2.578b58f9.chunk.js",
+    "static/css/main.997000b8.chunk.css",
+    "static/js/main.ad4ecd1d.chunk.js"
   ]
 }

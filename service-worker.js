@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kids-maths-app/precache-manifest.bbc269ea63887744ed39e1853d31be76.js"
+  "/kids-maths-app/precache-manifest.984ffb713a9d30a64f4e6eceb0ddc18b.js"
 );
 
 self.addEventListener('message', (event) => {
