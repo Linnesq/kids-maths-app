@@ -12,13 +12,13 @@ const SYMBOLS = {
     SUB: "−",
     MULT: "×",
     DIV: "÷"
-}
+};
 
 const USERFILLS = {
     LEFT: 'left',
     RIGHT: 'right',
     RANDOM: 'random',
-}
+};
 
 const getSimpleTasks = () => {
     return {
@@ -39,7 +39,7 @@ const getSimpleTasks = () => {
         "userFills": USERFILLS.RANDOM,
     },
 };
-}
+};
 
 const getTimesTablesTask = () => {
     return {
@@ -57,7 +57,7 @@ const getTimesTablesTask = () => {
         "display": {
             "userFills": USERFILLS.RANDOM,
         }
-    }
+    };
 };
 
 const getDivisionTasks = () => {
@@ -79,7 +79,6 @@ const getDivisionTasks = () => {
             userFills: USERFILLS.RANDOM,
         }
     };
-
 };
 
 export { getSimpleTasks, getTimesTablesTask, getDivisionTasks };

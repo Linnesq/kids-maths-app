@@ -8,7 +8,7 @@ const DisplayBox = (props) => {
         <div className="DisplayBox">
             <span>{props.value}</span>
         </div>
-    )
+    );
 };
 
 DisplayBox.propTypes = {

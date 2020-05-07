@@ -11,7 +11,7 @@ const InputBox = (props) => {
         if (event.keyCode === 13) {
             onSubmit();
         }
-    }
+    };
 
     return (
         <input
@@ -22,7 +22,7 @@ const InputBox = (props) => {
             onKeyUp={onKey}
             autoFocus
         />
-    )
+    );
 };
 
 InputBox.propTypes = {

@@ -1,6 +1,6 @@
 const getRandomInt = (min, max) => {
     // FIX getRandomInt(0, 2) will only return 0 or 1, not 0, 1, 2
-    return Math.floor(Math.random() * max) + min
+    return Math.floor(Math.random() * max) + min;
 };
 
 const getSimpleAddition = (userFills = 'right') => {
@@ -54,7 +54,7 @@ const getSimpleSubtraction = (userFills='right') => {
     const left = Math.max(...values);
     const answer = Math.min(...values); 
     const right = left - answer;
-    const operator = "−"
+    const operator = "−";
 
     userFills = userFills === 'random' ? getUserFills() : userFills;
 
@@ -72,11 +72,11 @@ const getTimesTable = (userFills = 'answer', range = 10, factor = 2) => {
         operator: '×',
         userFills: userFills === 'random' ? randomUserFills : userFills,
     };
-}
+};
 
 const getUserFills = () => {
     return ['left', 'right', 'answer'][getRandomInt(1, 3) - 1];
-}
+};
 
 export { 
     getSimpleAddition, 

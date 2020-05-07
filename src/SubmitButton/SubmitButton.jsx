@@ -7,7 +7,7 @@ const SubmitButton = (props) => {
         <div className="SubmitButton">
             <button data-testid="submitButton" type="submit" onClick={props.onClickHandler}>{props.buttonText}</button>
         </div>
-    )
+    );
 };
 
 SubmitButton.propTypes = {

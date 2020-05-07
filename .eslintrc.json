@@ -24,7 +24,8 @@
         "no-multiple-empty-lines":"warn",
         "no-multi-spaces":"warn",
         "object-curly-spacing": ["warn", "always"],
-        "no-console":"warn"
+        "no-console": "warn",
+        "semi":["warn", "always", {"omitLastInOneLineBlock": true}]
     },
     "settings": {
         "react": {

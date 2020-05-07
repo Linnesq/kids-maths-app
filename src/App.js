@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 
 import MathView from './MathView';
-import { getSimpleTasks, getTimesTablesTask, getDivisionTasks } from './tasks/simple.js'
+import { getSimpleTasks, getTimesTablesTask, getDivisionTasks } from './tasks/simple.js';
 
 const App = () => {
   const tasks = [getSimpleTasks, getTimesTablesTask, getDivisionTasks];

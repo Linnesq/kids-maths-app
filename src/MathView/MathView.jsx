@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import DisplayBox from '../DisplayBox';
 import InputBox from '../InputBox';
-import SubmitButton from '../SubmitButton'
+import SubmitButton from '../SubmitButton';
 import TaskOptionsPanel from '../TaskOptionsPanel';
 
 import './MathView.scss';
@@ -17,7 +17,7 @@ const results = {
 class MathView extends React.Component {
     constructor(props) {
         super(props);
-        const { controls, taskFunctions } = props.taskData
+        const { controls, taskFunctions } = props.taskData;
         const { userFills } = props.taskData.display;
         const { range, factor } = controls[0];
 
@@ -121,7 +121,7 @@ class MathView extends React.Component {
                     displayText={this.state.displayText}
                     controlInfo={controls} />
             </>
-        )
+        );
     }
 }
 
