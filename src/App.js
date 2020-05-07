@@ -9,6 +9,7 @@ const App = () => {
   const [choice, setChoice] = useState(0);
   let data = tasks[choice]();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { data = tasks[choice]() }, [choice]);
 
   return (

@@ -18,7 +18,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
         "no-multiple-empty-lines":"warn",
@@ -34,7 +35,8 @@
         "react/jsx-sort-props": ["warn", {"callbacksLast": true }],
         "react/no-access-state-in-setstate": ["warn"],
         "react/button-has-type": ["warn"],
-        "react/jsx-wrap-multilines": "warn"
+        "react/jsx-wrap-multilines": "warn",
+        "react-hooks/exhaustive-deps": "warn"
     },
     "settings": {
         "react": {
