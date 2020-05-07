@@ -25,7 +25,16 @@
         "no-multi-spaces":"warn",
         "object-curly-spacing": ["warn", "always"],
         "no-console": "warn",
-        "semi":["warn", "always", {"omitLastInOneLineBlock": true}]
+        "semi":["warn", "always", {"omitLastInOneLineBlock": true}],
+        "comma-dangle": ["warn", { "imports": "never", "objects": "always-multiline", "arrays": "always-multiline"}],
+        "react/jsx-one-expression-per-line": ["warn", { "allow": "literal"}],
+        "react/jsx-indent": ["warn", 4, {"checkAttributes": true}],
+        "react/jsx-max-props-per-line": ["warn"],
+        "react/jsx-indent-props": ["warn", "first"],
+        "react/jsx-sort-props": ["warn", {"callbacksLast": true }],
+        "react/no-access-state-in-setstate": ["warn"],
+        "react/button-has-type": ["warn"],
+        "react/jsx-wrap-multilines": "warn"
     },
     "settings": {
         "react": {

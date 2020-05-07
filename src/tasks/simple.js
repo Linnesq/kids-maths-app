@@ -11,7 +11,7 @@ const SYMBOLS = {
     ADD: "+",
     SUB: "−",
     MULT: "×",
-    DIV: "÷"
+    DIV: "÷",
 };
 
 const USERFILLS = {
@@ -56,7 +56,7 @@ const getTimesTablesTask = () => {
         },
         "display": {
             "userFills": USERFILLS.RANDOM,
-        }
+        },
     };
 };
 
@@ -77,7 +77,7 @@ const getDivisionTasks = () => {
         },
         display: {
             userFills: USERFILLS.RANDOM,
-        }
+        },
     };
 };
 

@@ -84,5 +84,5 @@ export {
     getSimpleDivision, 
     getSimpleSubtraction, 
     getTimesTable,
-    getDivision,
+    getDivision
  };

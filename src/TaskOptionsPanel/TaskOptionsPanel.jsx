@@ -9,12 +9,14 @@ const TaskOptionsPanel = (props) => {
             ? 'TaskOptionsPanel TaskOptionsPanel-selected'
             : 'TaskOptionsPanel';
 
-        return <button
+        return (
+            <button
+            className={classes}
             key={item.displayText}
-            onClick={() => props.onClickHandler(item.displayText)}
-            className={classes}>
-            {item.displayText}
-        </button>;
+            type="button"
+            onClick={() => props.onClickHandler(item.displayText)}>
+                {item.displayText}
+            </button>);
     });
 
     return (

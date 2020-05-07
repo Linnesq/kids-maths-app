@@ -6,7 +6,9 @@ import './DisplayBox.scss';
 const DisplayBox = (props) => {
     return (
         <div className="DisplayBox">
-            <span>{props.value}</span>
+            <span>
+                {props.value}
+            </span>
         </div>
     );
 };
