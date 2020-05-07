@@ -135,7 +135,7 @@ MathView.propTypes = {
     })),
         taskFunctions: PropTypes.objectOf(PropTypes.func),
         display: PropTypes.shape({
-            userFills: PropTypes.oneOf(['left', 'right', 'random']).isRequired,
+            userFills: PropTypes.oneOf(['left', 'right', 'answer', 'random']).isRequired,
         }),
     }),
 };
