@@ -11,13 +11,18 @@ const mockProps = () => {
     return mockProps;
 };
 
+const mockStreakHandler = jest.fn();
+
 describe("MathView Component", () => {
     beforeEach(() => mockMath = jest.spyOn(global.Math, 'random').mockReturnValue(0.2));
     
-    afterEach(() => mockMath.mockRestore());
+    afterEach(() => {
+        mockMath.mockRestore();
+        mockStreakHandler.mockReset();
+    });
 
     test('should initialise with maths problem', () => {
-        const { container } = render(<MathView taskData={mockProps()} />);
+        const { container } = render(<MathView taskData={mockProps()} streakHandler={mockStreakHandler} />);
         const [left, right] = container.getElementsByClassName("DisplayBox");
 
         expect(left.textContent).toEqual(expect.stringMatching('6'));
@@ -25,7 +30,7 @@ describe("MathView Component", () => {
     });
 
     test('should accept input from keyboard and clicks', () => {
-        const { container, getByText } = render(<MathView taskData={mockProps()} />);
+        const { container, getByText } = render(<MathView taskData={mockProps()} streakHandler={mockStreakHandler} />);
         let submitButton = container.querySelector('.SubmitButton');
         expect(submitButton.textContent).toEqual("Submit");
 
@@ -39,16 +44,22 @@ describe("MathView Component", () => {
         fireEvent.click(getByText("Next"));
         expect(getByText("Do your best!")).toBeInTheDocument();
 
+        expect(mockStreakHandler).toHaveBeenCalledTimes(1);
+        expect(mockStreakHandler).toHaveBeenCalledWith(1);
+
         expect(container).toMatchSnapshot();
     });
 
     test("should not accept incorrect answers", () => {
-        const { container, getByText } = render(<MathView taskData={mockProps()} />);
+        const { container, getByText } = render(<MathView 
+            taskData={mockProps()} streakHandler={mockStreakHandler} />);
 
         const inputBox = container.querySelector('.InputBox');
         fireEvent.change(inputBox, { target: { value: 10 } }); // input '10'
 
         fireEvent.click(getByText("Submit"));
         expect(getByText("Unlucky, keep trying!")).toBeInTheDocument();
+        expect(mockStreakHandler).toHaveBeenCalledTimes(1);
+        expect(mockStreakHandler).toHaveBeenCalledWith(0);
     });
 });

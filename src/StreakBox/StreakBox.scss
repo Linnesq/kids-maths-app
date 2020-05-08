@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.StreakBox {
+  font-family: monospace;
+  margin-top: 20px;
+  font-size: $textRegular;
+  text-align: start;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.StreakBox-on-roll {
+  color: green;
+}
