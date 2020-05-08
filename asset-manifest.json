@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kids-maths-app/static/css/main.997000b8.chunk.css",
-    "main.js": "/kids-maths-app/static/js/main.ad4ecd1d.chunk.js",
-    "main.js.map": "/kids-maths-app/static/js/main.ad4ecd1d.chunk.js.map",
+    "main.css": "/kids-maths-app/static/css/main.45c24e18.chunk.css",
+    "main.js": "/kids-maths-app/static/js/main.acbb8fb2.chunk.js",
+    "main.js.map": "/kids-maths-app/static/js/main.acbb8fb2.chunk.js.map",
     "runtime-main.js": "/kids-maths-app/static/js/runtime-main.95b93fe0.js",
     "runtime-main.js.map": "/kids-maths-app/static/js/runtime-main.95b93fe0.js.map",
-    "static/js/2.578b58f9.chunk.js": "/kids-maths-app/static/js/2.578b58f9.chunk.js",
-    "static/js/2.578b58f9.chunk.js.map": "/kids-maths-app/static/js/2.578b58f9.chunk.js.map",
+    "static/js/2.ca3f5034.chunk.js": "/kids-maths-app/static/js/2.ca3f5034.chunk.js",
+    "static/js/2.ca3f5034.chunk.js.map": "/kids-maths-app/static/js/2.ca3f5034.chunk.js.map",
     "index.html": "/kids-maths-app/index.html",
-    "precache-manifest.984ffb713a9d30a64f4e6eceb0ddc18b.js": "/kids-maths-app/precache-manifest.984ffb713a9d30a64f4e6eceb0ddc18b.js",
+    "precache-manifest.999f056ef89efe00e4d5fa3c3c6c6542.js": "/kids-maths-app/precache-manifest.999f056ef89efe00e4d5fa3c3c6c6542.js",
     "service-worker.js": "/kids-maths-app/service-worker.js",
-    "static/css/main.997000b8.chunk.css.map": "/kids-maths-app/static/css/main.997000b8.chunk.css.map",
-    "static/js/2.578b58f9.chunk.js.LICENSE.txt": "/kids-maths-app/static/js/2.578b58f9.chunk.js.LICENSE.txt"
+    "static/css/main.45c24e18.chunk.css.map": "/kids-maths-app/static/css/main.45c24e18.chunk.css.map",
+    "static/js/2.ca3f5034.chunk.js.LICENSE.txt": "/kids-maths-app/static/js/2.ca3f5034.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95b93fe0.js",
-    "static/js/2.578b58f9.chunk.js",
-    "static/css/main.997000b8.chunk.css",
-    "static/js/main.ad4ecd1d.chunk.js"
+    "static/js/2.ca3f5034.chunk.js",
+    "static/css/main.45c24e18.chunk.css",
+    "static/js/main.acbb8fb2.chunk.js"
   ]
 }
