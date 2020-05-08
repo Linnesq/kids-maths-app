@@ -36,7 +36,8 @@
         "react/no-access-state-in-setstate": ["warn"],
         "react/button-has-type": ["warn"],
         "react/jsx-wrap-multilines": "warn",
-        "react-hooks/exhaustive-deps": "warn"
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "warn"
     },
     "settings": {
         "react": {

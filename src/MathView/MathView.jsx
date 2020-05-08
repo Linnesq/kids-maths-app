@@ -47,10 +47,15 @@ class MathView extends React.Component {
             this.onNewTask();
         } else {
             const isCorrect = this.state.value === this.state.task[this.state.task.userFills];
+            const { streakHandler } = this.props;
+
             this.setState(prevState => ({
                 result: isCorrect ? results.CORRECT : results.INCORRECT,
                 value: isCorrect ? prevState.value : "",
             }));
+
+            const latest = isCorrect ? 1 : 0;
+            streakHandler(latest);
         }
     }
 
@@ -134,6 +139,7 @@ class MathView extends React.Component {
 }
 
 MathView.propTypes = {
+    streakHandler: PropTypes.func,
     taskData: PropTypes.shape({
         controls: PropTypes.arrayOf(PropTypes.shape({
             taskType: PropTypes.string.isRequired,
