@@ -1,4 +1,5 @@
 {
+  "homepage": "https://www.richardgilmour.co.uk/kids-maths-app",
   "name": "react-playground",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +22,9 @@
     "lint:js:fix": "eslint src/ --ext .js,.jsx --fix",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --fix",
-    "lint": "npm run lint:js && npm run lint:scss"
+    "lint": "npm run lint:js && npm run lint:scss",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +44,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^3.2.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^20.0.0"
   }
