@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ab97d5dca08521b36d420012abce078",
+    "revision": "e6a4e5a1c6887469477415e6f70310b0",
     "url": "/kids-maths-app/index.html"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kids-maths-app/static/css/main.45c24e18.chunk.css"
   },
   {
-    "revision": "e0b3b4006ece0b4a825b",
-    "url": "/kids-maths-app/static/js/2.ca3f5034.chunk.js"
+    "revision": "86470af692fca35a5912",
+    "url": "/kids-maths-app/static/js/2.901573d9.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/kids-maths-app/static/js/2.ca3f5034.chunk.js.LICENSE.txt"
+    "revision": "570d362d673dab785e62d2b8563e1118",
+    "url": "/kids-maths-app/static/js/2.901573d9.chunk.js.LICENSE.txt"
   },
   {
     "revision": "f64bb88838258dff43f5",
