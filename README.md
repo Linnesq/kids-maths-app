@@ -11,6 +11,9 @@ This is a demo project - a single page react app which spits out some Key Stage 
 - install dependencies `npm i`.
 - run the app in dev mode with `npm start`.
 
+# How do I deploy this?
+
+`npm run deploy` builds the app and creates a gh-pages branch which is pushed to github. The rest is handled in the repo settings.
 
 ## Available Scripts
 
